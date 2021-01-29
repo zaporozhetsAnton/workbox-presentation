@@ -40,3 +40,7 @@ registerRoute(
 import { imageCache } from 'workbox-recipes';
 
 imageCache();
+
+// workbox strategies https://developers.google.com/web/tools/workbox/modules/workbox-strategies
+// workbox recipes https://developers.google.com/web/tools/workbox/modules/workbox-recipes
+// workbox documentation https://developers.google.com/web/tools/workbox/guides/get-started

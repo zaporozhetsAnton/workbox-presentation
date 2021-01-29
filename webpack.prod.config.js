@@ -46,6 +46,23 @@ module.exports = merge(common, {
       swDest: 'service-worker.js',
       // exclude: [/\.(?:png|jpg|jpeg|svg)$/], // example of excluding from injected manifest
     }),
+    // new workboxPlugin.GenerateSW({
+    //   swDest: 'service-worker.js',
+    //   // exclude: [/\.(?:png|jpg|jpeg|svg)$/], // example of excluding from injected manifest
+    //   runtimeCaching: [
+    //     {
+    //       urlPattern: ({ request }) => request.destination === 'image',
+    //       handler: 'StaleWhileRevalidate',
+    //       options: {
+    //         cacheName: 'images',
+    //         expiration: {
+    //           maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+    //           maxEntries: 60,
+    //         },
+    //       },
+    //     },
+    //   ],
+    // }),
   ],
   optimization: {
     runtimeChunk: 'single',
