@@ -6,6 +6,8 @@
     "dev": "NODE_ENV=development webpack serve --config ./webpack.dev.server.config.js",
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js",
     "bundleanalyze": "webpack --config ./webpack.bundleanalyze.js",
+    "run-prod": "http-server ./dist/",
+    "https-prod": "ngrok http 8080",
     "lint": "tsc --noEmit && eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --quiet --fix"
   },
@@ -51,12 +53,14 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.4.1",
     "html-webpack-plugin": "^4.5.0",
+    "http-server": "^0.12.3",
     "image-minimizer-webpack-plugin": "^1.0.0",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
     "jest": "^26.6.3",
+    "ngrok": "^3.4.0",
     "prettier": "2.1.2",
     "regenerator-runtime": "^0.13.7",
     "terser-webpack-plugin": "^5.0.3",
@@ -67,6 +71,13 @@
     "webpack-bundle-analyzer": "^4.2.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.4.0"
+    "webpack-merge": "^5.4.0",
+    "workbox-cacheable-response": "^6.0.2",
+    "workbox-expiration": "^6.0.2",
+    "workbox-precaching": "^6.0.2",
+    "workbox-recipes": "^6.0.2",
+    "workbox-routing": "^6.0.2",
+    "workbox-strategies": "^6.0.2",
+    "workbox-webpack-plugin": "^6.0.2"
   }
 }
